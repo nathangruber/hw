@@ -1,7 +1,7 @@
 <?php
 $num = 9;
  
-/* Recursive function for fibonacci series. */
+//Recursive function for fibonacci series. 
  
 function fibonacci($num){
  
@@ -20,7 +20,7 @@ function fibonacci($num){
  
 }
  
-/* Call Function. */
+// Call Function. 
  
 for ($i=0;$i<$num;$i++){
  

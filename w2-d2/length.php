@@ -2,11 +2,11 @@
 
 
 $s = "InputString";
-$i=0;
+$j=0;
 while ($s[$i] != '') {
-  $i++;
+  $j++;
 }
-print $i;
+print $j;
 
 
 ?>
