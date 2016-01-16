@@ -10,8 +10,7 @@ class ShapeMaker{
 		for($i=0; $i < $size;$i++){ // i is the starting point, i is < than the parameter passed in from the function
 									// i is the increment- adding 1
 			$arr1 = array();		//creating variable assign it empty array
-		
-
+			
 			for($t=0; $t < $size;$t++){ //nested for loop 
 				array_push($arr1, "*"); // array_push is adding the string to the array
 			}							// "." adding elements
@@ -36,23 +35,23 @@ class ShapeMaker{
 		$rowLimit++;   //var is increasing the columns by 1
 		}
 		}     
-	
+		
 	function backwardstriangle(){
 		$rowLimit3 = 1;   //star count
 		$spaceCount = 3;  //space count	variables needed to be created, wasn't there orginally	
 		for($i=0;$i<$this->size;$i++){
 		
-		for($y=0;$y<=$spaceCount;$y++)    //adding spaces
+			for($y=0;$y<=$spaceCount;$y++)    //adding spaces
 {
 
-			echo " "; 
+				echo " "; 
 
 }
 			$spaceCount --;
 			for($t=0;$t<$rowLimit3;$t++){
 					echo $this->stars[$i][$t];
 		}
-		echo "\n";
+				echo "\n";
 		$rowLimit3 = $rowLimit3+1; //adding stars
 
 
@@ -67,7 +66,7 @@ class ShapeMaker{
 	 		for($t=0;$t<$rowLimit1;$t++){
 	 			echo $this->stars[$i][$t];
 	 	}
-		echo "\n";
+				echo "\n";
 		$rowLimit1--;  // changed variable to -- to decrease by 1 *
 		}
 		}
@@ -85,9 +84,9 @@ class ShapeMaker{
 $maker = new ShapeMaker(4);
 
 //print_r ($maker->stars);// using maker var cause outside of class, oppose to using $this which is inside
-$maker->triangle(); //calling the function, creating it is only declaring it
-$maker->upsidedowntriangle(); 
 $maker->backwardstriangle();
+$maker->upsidedowntriangle();
+$maker->triangle(); //calling the function, creating it is only declaring it 
 
 ?>
 
