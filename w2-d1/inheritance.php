@@ -13,19 +13,19 @@
 		function __construct(){
 		;
 		}
-		function(support){
+		function __support(){
 		;
 		}
-		function(glides){
+		function __glides(){
 		;
 		}
-		function(cuts){
+		function __cuts(){
 		;
 		}
-		function(protects){
+		function __protects(){
 		;
 		}
-		function(maneuverability){
+		function __maneuverability()){
 		;
 		}
 
@@ -34,13 +34,13 @@
 		function __construct(){
 		;
 		}		
-		function(stylish){
+		function __stylish(){
 		;
 		}
-		function(lacelock){
+		function __lacelock()){
 		;
 		}
-		function(tuuk_runner){
+		function __tuuk_runner(){
 		;
 		}	
 }
@@ -48,25 +48,25 @@
 		function __construct(){
 		;
 		}
-		function(custom_insole){
+		function __custom_insole(){
 		;
 		}
-		function(light_weight){
+		function __light_weight(){
 		;
 		}
-		function(speedblade_holder){
+		function __speedblade_holder(){
 		;
 		}
-		function(Carbon_Twill_Composite_AttackFrame){
+		function __Carbon_Twill_Composite_AttackFrame(){
 		;
 		}
-		function(Dual_Zone_Clarino_Liner){
+		function __Dual_Zone_Clarino_Liner(){
 		;
 		}
-		function(Formula_T6_Pro_Core){
+		function __Formula_T6_Pro_Core(){
 		;
 		}
-		function(custom_colors){
+		function __custom_colors(){
 		;
 		}
 }
