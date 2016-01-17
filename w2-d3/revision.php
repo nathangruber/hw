@@ -1,5 +1,7 @@
 <?php
-	class ice_skate{
+
+class ice_skate{
+		
 		var $laces;
 		var $blade;
 		var $rivets;
@@ -10,64 +12,80 @@
 		var $outsole;
 		var $heel;
 		var $achillesguard;
-		function __construct(){
-		;
-		}
-		function(support){
-		;
-		}
-		function(glides){
-		;
-		}
-		function(cuts){
-		;
-		}
-		function(protects){
-		;
-		}
-		function(maneuverability){
-		;
-		}
+
+		function bauer($laces, $blade, $rivets, $boots, $holders, $tongue, $toe, $outsole, $heel, $achillesguard){
+				$this->laces = $laces;
+				$this->blade = $blade;
+				$this->rivets = $rivets;
+				$this->boots = $boots;
+				$this->holders = $holders;
+				$this->tongue = $tongue;
+				$this->toe = $toe;
+				$this->outsole = $outsole;
+				$this->heel = $heel;
+				$this->achillesguard = $achillesguard;
+
+		function makeBauer(){
+			$this->make();
+			echo "It has a".$this->blade. "\n";
+}
+		function neededParts(){
+			echo $this->boot. "needs".$this->holders. "\n";
+} 		
+		function assemblyTime(){
+			for($i = 0; $i < $this->boot; $i++){
+				if($i < 30){
+					$assemblyTime++;
+				}
+				else if($i < 20){
+					$assemblyTime = $assemblyTime + 2;
+			}
+				else if($i < 10){
+					$assemblyTime = $assemblyTime + 3;
+				}
+
+				else{
+					$assemblyTime = $assemblyTime +4;
+}
+}
+echo "This skate will take you $assemblyTime to assemble. \n";
 
 }
-		class bauer extends ice_skate{
-		function __construct(){
-		;
-		}		
-		function(stylish){
-		;
-		}
-		function(lacelock){
-		;
-		}
-		function(tuuk_runner){
-		;
-		}	
 }
-		class ccm extends ice_skate{
-		function __construct(){
-		;
-		}
-		function(custom_insole){
-		;
-		}
-		function(light_weight){
-		;
-		}
-		function(speedblade_holder){
-		;
-		}
-		function(Carbon_Twill_Composite_AttackFrame){
-		;
-		}
-		function(Dual_Zone_Clarino_Liner){
-		;
-		}
-		function(Formula_T6_Pro_Core){
-		;
-		}
-		function(custom_colors){
-		;
-		}
+class skateInstructions{
+
+		function howToBuild($t){
+			if (!$t){
+				$this->toe = false;
+				echo "You skipped a step.\n";
 }
+			else{
+				$this->toe = true;
+				echo "Move on to next step\n";
+}
+}
+
+}
+
+
+
+
+
+
+$make = new ice_skate();
+$make->assemblyTime();
+
+$assemble = new skateInstructions();
+$assemble->howToBuild(true);
+
+
+
+
+
+
+
+
+
+
+
 ?>
